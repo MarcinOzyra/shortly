@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/png" />
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
     <title>Shortly</title>
   </head>
   <body>
@@ -59,12 +60,14 @@
           class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
         >
           <input
+            id="link-input"
             type="text"
             class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500"
             placeholder="Shorten a link here"
-            id="link-input"
           />
           <button class="px-10 py-3 text-white bg-cyan rounded-lg hover:bg-cyanLight md:py-2">Shorten It!</button>
+          <!-- err message -->
+          <div id="err-msg" class="absolute left-7 bottom-3 text-red text-sm italic"></div>
         </form>
         <!-- llink 1 -->
         <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
